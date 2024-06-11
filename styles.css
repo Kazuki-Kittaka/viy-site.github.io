@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(226, 252, 243);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.services, .adventures, .cta {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.service-grid, .adventure-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service, .adventure {
+    flex: 1;
+    margin: 1em;
+    max-width: 300px;
+}
+
+.service img, .adventure img, .cta-img {
+    width:auto;
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* メディアクエリでレスポンシブ対応 */
+@media (max-width: 768px) {
+    .service, .adventure {
+        flex: 1 1 100%;
+    }
+
+    .service-grid, .adventure-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
+        width: 100%;
+        padding: 0 1em;
+    }
+}
